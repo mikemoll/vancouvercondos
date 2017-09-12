@@ -3212,6 +3212,11 @@ table {
   z-index: 3;
 }
 
+.searchbackground{
+background-color: #004274;
+
+}
+
 .splash-search {
   position: relative;
   width: 100%;

@@ -143,8 +143,44 @@
                     <ul>
                         <li><a href="#">Home</a>
                             <ul class="sub-menu">
-                             <li><a href="homepagev2.html">Home Page Video Version 2</a></li>
-                                
+                                <li>
+                                    <a href="#">Map</a>
+                                    <ul class="sub-menu">
+                                        <li><a href="home-map.html">Map Standard</a></li>
+                                        <li><a href="home-map-fullscreen.html">Map Fullscreen</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">Parallax</a>
+                                    <ul class="sub-menu">
+                                        <li><a href="home-parallax.html">Parallax Standard</a></li>
+                                        <li><a href="home-parallax-fullscreen.html">Parallax Fullscreen</a></li>
+                                        <li><a href="home-parallax-autofix.html">Parallax Auto Fix</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">Video</a>
+                                    <ul class="sub-menu">
+                                        <li><a href="home-video.html">Video Standard</a></li>
+                                        <li><a href="home-video-fullscreen.html">Video Fullscreen</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">Sliders</a>
+                                    <ul class="sub-menu">
+                                        <li><a href="home-property-slider.html">Property Slider</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">Splash</a>
+                                    <ul class="sub-menu">
+                                        <li><a href="splash-video.html">Video Fullscreen</a></li>
+                                        <li><a href="splash-slider.html">Slider Fullscreen</a></li>
+                                        <li><a href="splash-image.html">Image Fullscreen</a></li>
+                                        <li><a href="home-splash.html">Home With Splash</a></li>
+                                        <li><a href="splash-half.html">Half</a></li>
+                                    </ul>
+                                </li>
                             </ul>
                         </li>
                         <li><a href="#">Condos</a>
@@ -273,6 +309,37 @@
     </div>
     <!--end header section header v1-->
 
+    <!--end header section header v1-->
+
+    <div class="header-media">
+        <div class="banner-module banner-video">
+            <div class="banner-video-inner"></div>
+        </div>
+        <div class="banner-caption">
+            <h1>Discover Your Perfect Home</h1>
+            <h2 class="banner-sub-title">Top banner option with background video</h2>
+            <form class="form-inline banner-search-main">
+                <div class="form-group">
+                    <select class="selectpicker" data-live-search="false" data-live-search-style="begins" title="Location">
+                        <option>Location 1</option>
+                        <option>Location 2</option>
+                        <option>Location 3</option>
+                        <option>Location 4</option>
+                        <option>Location 5</option>
+                    </select>
+                    <div class="search">
+                        <input class="form-control" type="text" placeholder="Enter Keyword">
+                    </div>
+                    <div class="search-btn">
+                        <button class="btn btn-secondary"><i class="fa fa-search"></i> Search</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!--start section page body-->
+
     <div class="header-media">
         <div id="houzez-gmap-main">
             <div class="mapPlaceholder">
@@ -307,12 +374,12 @@
         </div>
         <div class="search-expandable search-expandable-mini search-mini-left">
             <div class="container">
-
                 <div class="row">
-                    <div class="col-sm-12 col-xs-12 ">
-
-                        <div class="search-inner-wrap advanced-search searchbackground">
-                        <form>
+                    <div class="col-sm-12 col-xs-12">
+                        <div class="search-inner-wrap">
+                            <div class="search-expand-btn btn-primary">Advanced Search</div>
+                            <div class="advanced-search advanced-search-hidden">
+                                <form>
                                     <div class="row">
                                         <div class="col-sm-12 col-xs-12">
                                             <div class="form-group">
@@ -1598,6 +1665,27 @@ Coal Harbour</h4>
 
             google.maps.event.addDomListener( window, 'load', initMap );
         })(jQuery)
+    </script>
+    <script>
+        jQuery(document).ready( function($) {
+            $(".banner-video-inner").vegas({
+                overlay: true,
+                slides: [
+                    {
+                        src: '',
+                        video: {
+                            src: [
+                                'http://houzez01.favethemes.com/wp-content/uploads/2016/03/houzez-video.mp4',
+                                'http://houzez01.favethemes.com/wp-content/uploads/2016/03/houzez-video.webm',
+                                'http://houzez01.favethemes.com/wp-content/uploads/2016/03/houzez-video.ogv'
+                            ],
+                            loop: true,
+                            mute: true
+                        }
+                    }
+                ]
+            });
+        });
     </script>
 </body>
 </html>
