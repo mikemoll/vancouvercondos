@@ -1447,7 +1447,7 @@ table {
 .header-mobile {
   z-index: 11;
   height: auto;
-  background-color: #00aeef;
+  background-color: #fff;
   min-height: 60px;
 }
 .header-mobile > .container {
@@ -2566,7 +2566,7 @@ table {
 }
 .mobile-nav .nav-trigger {
   cursor: pointer;
-  color: #fff;
+  color: #0054a5;
   line-height: 18px;
   height: 18px;
   width: 18px;
